@@ -35,11 +35,10 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 // Отступы
-$spacing-xs: 0.25rem;
-$spacing-sm: 0.5rem;
-$spacing-md: 1rem;
-$spacing-lg: 1.5rem;
-$spacing-xl: 2rem;
+$spacing-sm: rem(8);
+$spacing-md: rem(12);
+$spacing-lg: rem(16);
+$spacing-xl: rem(32);
 
 // Радиусы и бордеры
 $border-radius-sm: rem(4);
