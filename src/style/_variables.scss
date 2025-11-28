@@ -1,5 +1,17 @@
 @use './helpers/functions/' as *;
 
+:root {
+  --primary-color: #220f03;
+  --secondary-color: #ffffff;
+  --text-light: var(--primary-color);
+  --text-dark: var(--secondary-color);
+  --text-active: var(--gradient-text-light);
+}
+
+[data-theme='dark'] {
+  --text-active: var(--gradient-text-dark);
+}
+
 // Цвета
 $color-blue: hsl(195, 88%, 59%);
 $color-grey: hsl(225, 22%, 45%);
