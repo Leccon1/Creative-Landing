@@ -6,3 +6,5 @@
 @use './base/utilites';
 
 // далее block, components, pages и так далее
+@use './gradient';
+@use './blocks/animated-complex-gradient';
