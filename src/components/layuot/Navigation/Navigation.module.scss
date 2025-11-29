@@ -13,9 +13,6 @@
     flex-direction: row;
     gap: fluid(16, 42);
 
-    .navListItem {
-    }
-
     .navListLink {
       anchor-name: --link;
       display: block;
@@ -23,7 +20,9 @@
       color: var(--primary-color);
       border-radius: $border-radius-xl;
       padding-inline: $spacing-md;
-      transition: color 0.3s;
+      transition:
+        color $transition-normal,
+        font-size $transition-normal;
 
       &:hover,
       &.active {
@@ -32,6 +31,7 @@
 
       &.active {
         color: #fff;
+        font-size: rem(16);
       }
     }
   }
@@ -91,6 +91,7 @@
 
 .navHighlight {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
   border: $border-width solid $color-white;
   border-radius: $border-radius-lg;
   transition: all 0.3s ease;
@@ -105,4 +106,8 @@
 
   top: anchor(center);
   transform: translateY(-50%);
+
+  & .navListLink.active {
+    transform: scale(2.1);
+  }
 }
