@@ -1,0 +1,16 @@
+@use '@sass/variables' as *;
+@use '@sass/helpers' as *;
+
+.logo {
+  font-family: $font-family-secondary;
+  font-size: fluid(24, 32, 375, 1440);
+  font-weight: $font-weight-bold;
+
+  display: flex;
+  align-items: center;
+  gap: fluid(4, 8);
+
+  span {
+    font-weight: $font-weight-normal;
+  }
+}
