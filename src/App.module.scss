@@ -1,0 +1,7 @@
+@use '@sass/variables' as *;
+@use '@sass/helpers' as *;
+
+.app {
+  max-width: rem(1440);
+  margin: 0 auto;
+}
