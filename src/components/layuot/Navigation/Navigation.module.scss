@@ -9,4 +9,25 @@
     flex-direction: row;
     gap: fluid(16, 42);
   }
+  @include mobile {
+    position: fixed;
+    backdrop-filter: blur(80px);
+    background: rgba(11, 13, 23, 0.15);
+    top: 0;
+    right: -100%;
+    width: rem(254);
+    height: 100vh;
+    padding: rem(20) rem(32);
+    align-items: flex-start;
+    transition: right $transition-normal;
+
+    &.active {
+      right: 0 !important;
+    }
+
+    &.active ~ .burger {
+      z-index: $z-index-modal;
+      transition-delay: 0.3s;
+    }
+  }
 }

@@ -1,8 +1,12 @@
 import styles from './BurgerButton.module.scss'
 
-const BurgerButton = () => {
+const BurgerButton = ({ onClick, isActive }) => {
   return (
-    <button className={styles.burger} aria-label="Открыть меню">
+    <button
+      className={`${styles.burger} ${isActive ? `${styles.active}` : ''}`}
+      onClick={onClick}
+      aria-label="Открыть меню"
+    >
       <span></span>
       <span></span>
       <span></span>

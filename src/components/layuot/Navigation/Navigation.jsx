@@ -1,8 +1,8 @@
 import styles from './Navigation.module.scss'
 
-const Navigation = () => {
+const Navigation = ({ isActive }) => {
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${isActive ? `${styles.active}` : ''}`}>
       <ul className={styles.navList}>
         <li className={styles.navListItem}>Home</li>
         <li className={styles.navListItem}>About us</li>
