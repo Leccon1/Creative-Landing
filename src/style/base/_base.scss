@@ -16,3 +16,7 @@ body {
   font-size: rem(16);
   font-weight: $font-weight-normal;
 }
+
+a {
+  color: var(--primary-color);
+}
