@@ -2,6 +2,7 @@
 @use '@sass/helpers' as *;
 
 .nav {
+  z-index: $z-index-modal;
   .navList {
     font-size: fluid(14, 16);
 
@@ -11,15 +12,22 @@
   }
   @include mobile {
     position: fixed;
-    backdrop-filter: blur(80px);
-    background: rgba(11, 13, 23, 0.15);
+    backdrop-filter: blur(3px);
     top: 0;
     right: -100%;
     width: rem(254);
     height: 100vh;
     padding: rem(20) rem(32);
-    align-items: flex-start;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     transition: right $transition-normal;
+
+    .navList {
+      flex-direction: column;
+    }
 
     &.active {
       right: 0 !important;
@@ -29,5 +37,24 @@
       z-index: $z-index-modal;
       transition-delay: 0.3s;
     }
+  }
+}
+
+.navOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: $z-index-modal - 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all $transition-normal;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
   }
 }

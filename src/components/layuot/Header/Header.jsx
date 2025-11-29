@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Logo />
-      <Navigation isActive={isMenuActive} />
+      <Navigation isActive={isMenuActive} onClose={() => setIsMenuActive(false)} />
       <BurgerButton onClick={toogleMenu} isActive={isMenuActive} />
     </header>
   )
