@@ -2,22 +2,49 @@
 @use '@sass/helpers' as *;
 
 .nav {
+  position: relative;
   z-index: $z-index-modal;
+
   .navList {
+    position: relative;
     font-size: fluid(14, 16);
 
     display: flex;
     flex-direction: row;
     gap: fluid(16, 42);
+
+    .navListItem {
+    }
+
+    .navListLink {
+      anchor-name: --link;
+      display: block;
+      width: 100%;
+      color: var(--primary-color);
+      border-radius: $border-radius-xl;
+      padding-inline: $spacing-md;
+      transition: color 0.3s;
+
+      &:hover,
+      &.active {
+        anchor-name: --active-link;
+      }
+
+      &.active {
+        color: #fff;
+      }
+    }
   }
+
   @include mobile {
     position: fixed;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     top: 0;
     right: -100%;
     width: rem(254);
     height: 100vh;
     padding: rem(20) rem(32);
+    box-shadow: $box-shadow-lg;
 
     display: flex;
     justify-content: center;
@@ -26,7 +53,10 @@
     transition: right $transition-normal;
 
     .navList {
+      width: 100%;
       flex-direction: column;
+      gap: $spacing-xl;
+      backdrop-filter: blur(50px);
     }
 
     &.active {
@@ -57,4 +87,22 @@
     opacity: 1;
     visibility: visible;
   }
+}
+
+.navHighlight {
+  position: absolute;
+  border: $border-width solid $color-white;
+  border-radius: $border-radius-lg;
+  transition: all 0.3s ease;
+  pointer-events: none;
+
+  position-anchor: --active-link;
+
+  left: anchor(left);
+  right: anchor(right);
+
+  height: calc(anchor-size(height) * 2);
+
+  top: anchor(center);
+  transform: translateY(-50%);
 }
