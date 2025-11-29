@@ -2,7 +2,18 @@
 @use '../helpers/' as *;
 
 html {
-	font-size: 62.5%; /* 1rem = 10px */
-	box-sizing: border-box;
-	scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background-color: var(--secondary-color);
+
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
 }
