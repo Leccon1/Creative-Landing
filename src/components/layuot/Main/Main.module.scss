@@ -2,6 +2,7 @@
 @use '@sass/helpers' as *;
 
 .main {
+  position: relative;
   flex: 1;
 
   display: flex;
@@ -25,5 +26,35 @@
 
   font-family: $font-family-base;
   word-spacing: $spacing-sm;
+  line-height: rem(24);
   text-align: center;
+}
+
+.mainBackgroundInfo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.mainBackgroundInfoTitle {
+  font-size: fluid(24, 36);
+  font-weight: $font-weight-normal;
+  letter-spacing: fluid(6, 12);
+}
+
+.mainQuote {
+  width: rem(400);
+
+  font-family: $font-family-base;
+  font-style: italic;
+  letter-spacing: fluid(2, 4);
+  text-transform: none;
+
+  b {
+    font-style: normal;
+  }
 }
