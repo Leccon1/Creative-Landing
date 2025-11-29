@@ -1,0 +1,32 @@
+@use '@sass/variables' as *;
+@use '@sass/helpers' as *;
+
+.main {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+}
+
+.mainTitle {
+  anchor-name: --main-title;
+  font-family: $font-family-secondary;
+  font-size: fluid(42, 72);
+  font-weight: $font-weight-bold;
+  letter-spacing: rem(12);
+}
+
+.mainDecription {
+  position: absolute;
+  top: anchor(--main-title bottom);
+  width: anchor-size(--main-title width);
+
+  margin-top: fluid(4, 8);
+
+  font-family: $font-family-base;
+  word-spacing: $spacing-sm;
+  text-align: center;
+}
