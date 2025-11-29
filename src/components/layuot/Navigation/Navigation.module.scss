@@ -1,0 +1,12 @@
+@use '@sass/variables' as *;
+@use '@sass/helpers' as *;
+
+.nav {
+  .navList {
+    font-size: fluid(14, 16);
+
+    display: flex;
+    flex-direction: row;
+    gap: fluid(16, 42);
+  }
+}
