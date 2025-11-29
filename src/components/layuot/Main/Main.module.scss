@@ -7,12 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: fluid(4, 14);
 
   text-transform: uppercase;
 }
 
 .mainTitle {
-  anchor-name: --main-title;
   font-family: $font-family-secondary;
   font-size: fluid(42, 72);
   font-weight: $font-weight-bold;
@@ -20,11 +21,7 @@
 }
 
 .mainDecription {
-  position: absolute;
-  top: anchor(--main-title bottom);
-  width: anchor-size(--main-title width);
-
-  margin-top: fluid(4, 8);
+  width: fluid(300, 600);
 
   font-family: $font-family-base;
   word-spacing: $spacing-sm;
