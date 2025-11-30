@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     gap: fluid(16, 42);
+    z-index: 10;
 
     .navListLink {
       anchor-name: --link;
@@ -23,10 +24,9 @@
       transition:
         color $transition-normal,
         transform $transition-normal;
-
       &.active {
+        color: $color-light;
         anchor-name: --active-link;
-        color: #fff;
         transform: scale(1.1);
       }
     }
@@ -94,7 +94,10 @@
   border-radius: $border-radius-lg;
   pointer-events: none;
   box-shadow: $box-shadow-lg;
+
+  backface-visibility: hidden;
   transition: all $transition-normal;
+  z-index: -1;
 
   position-anchor: --active-link;
 
@@ -104,5 +107,9 @@
   height: calc(anchor-size(height) * 2);
 
   top: anchor(center);
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateZ(0);
+
+  @include mobile {
+    display: none;
+  }
 }
