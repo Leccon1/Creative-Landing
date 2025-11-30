@@ -3,7 +3,7 @@
 @use 'sass:color';
 
 .button {
-  color: $color-white;
+  color: var(--text-active);
   background-color: color.adjust($color-grey, $lightness: 30%);
   padding: fluid(12, 18);
   border-radius: $border-radius-xl;
