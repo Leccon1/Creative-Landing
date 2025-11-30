@@ -11,10 +11,13 @@ body {
   overflow-x: hidden;
 
   background-color: var(--secondary-color);
+  color: var(--text-active);
 
   font-family: $font-family-base;
   font-size: rem(16);
   font-weight: $font-weight-normal;
+
+  transition: all $transition-fast;
 }
 
 a {
