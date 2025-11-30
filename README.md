@@ -2,35 +2,36 @@
 
 My personal set of configurations and approaches to frontend development.
 This repository allows me to start new projects quickly, maintain a consistent style, and avoid repeating setup steps.
+
 ## Getting Started
 
 1. Clone or copy the repository. (In your project: `git clone https://github.com/Leccon1/My-standart-for-projects.git`)
-3. Run `npm install` to install dependencies.
-4. Use `npm run dev` to start development with Vite.
-5. Adjust variables, colors, and mixins to match your new project.
+2. Run `npm install` to install dependencies.
+3. Use `npm run dev` to start development with Vite.
+4. Adjust variables, colors, and mixins to match your new project.
 
 ---
 
 ## What's inside?
 
-* **SCSS** — complete structure with variables, mixins, functions, helpers, and BEM-based organization.
-* **JavaScript** — base file with ready-to-use structure for scripts.
-* **Project Structure** — organized by purpose: base styles, blocks, components, pages, and helpers.
-* **Vite Configuration** — optimized setup for my workflow (paths, aliases, build optimization).
-* **Stylelint Configuration** — automatic code-style checking for SCSS with custom rules.
-* **Eslint Configuration** — Checking your JS code with ready-made custom rules.
-* **Prettier Configuration** — Automatically formatting your code with strict opinionated rules.
-* **Git Integration** — project ready for version control, with `.gitignore` tuned for web projects.
+- **SCSS** — complete structure with variables, mixins, functions, helpers, and BEM-based organization.
+- **JavaScript** — base file with ready-to-use structure for scripts.
+- **Project Structure** — organized by purpose: base styles, blocks, components, pages, and helpers.
+- **Vite Configuration** — optimized setup for my workflow (paths, aliases, build optimization).
+- **Stylelint Configuration** — automatic code-style checking for SCSS with custom rules.
+- **Eslint Configuration** — Checking your JS code with ready-made custom rules.
+- **Prettier Configuration** — Automatically formatting your code with strict opinionated rules.
+- **Git Integration** — project ready for version control, with `.gitignore` tuned for web projects.
 
 ---
 
 ## Why this exists
 
-* Fast setup for new projects
-* Unified and consistent code style
-* Better scalability and maintenance
-* Simplifies collaboration and onboarding
-* Reusability of patterns and best practices
+- Fast setup for new projects
+- Unified and consistent code style
+- Better scalability and maintenance
+- Simplifies collaboration and onboarding
+- Reusability of patterns and best practices
 
 ---
 
@@ -95,4 +96,3 @@ If you want to create your own reusable frontend setup — take this as a base a
 ---
 
 made by [Leccon1](https://github.com/Leccon1)
-
