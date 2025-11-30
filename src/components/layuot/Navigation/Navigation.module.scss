@@ -24,12 +24,8 @@
         color $transition-normal,
         transform $transition-normal;
 
-      &:hover,
       &.active {
         anchor-name: --active-link;
-      }
-
-      &.active {
         color: #fff;
         transform: scale(1.1);
       }
@@ -49,6 +45,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: $spacing-xl;
 
     transition: right $transition-normal;
 
