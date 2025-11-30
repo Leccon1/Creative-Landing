@@ -6,10 +6,14 @@
   --text-light: var(--primary-color);
   --text-dark: var(--secondary-color);
   --text-active: var(--text-light);
+  --box-shadow-color-light: #cabfd7;
+  --box-shadow-color-dark: #000a28;
+  --box-shadow-color-active: var(--box-shadow-color-light);
 }
 
 [data-theme='dark'] {
   --text-active: var(--text-dark);
+  --box-shadow-color-active: var(--box-shadow-color-dark);
 }
 
 // Цвета

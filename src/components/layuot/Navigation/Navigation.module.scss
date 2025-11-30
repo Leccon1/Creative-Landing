@@ -18,14 +18,14 @@
       anchor-name: --link;
       display: block;
       width: 100%;
-      color: var(--primary-color);
+      color: var(--text-active);
       border-radius: $border-radius-xl;
       padding-inline: $spacing-lg;
       transition:
         color $transition-normal,
         transform $transition-normal;
       &.active {
-        color: $color-light;
+        color: $color-white;
         anchor-name: --active-link;
         transform: scale(1.1);
       }

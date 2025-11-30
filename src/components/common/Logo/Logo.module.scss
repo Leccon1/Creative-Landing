@@ -2,6 +2,7 @@
 @use '@sass/helpers' as *;
 
 .logo {
+  color: var(--text-active);
   font-family: $font-family-secondary;
   font-size: fluid(24, 32, 375, 1440);
   font-weight: $font-weight-bold;
