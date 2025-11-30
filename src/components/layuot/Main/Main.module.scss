@@ -22,7 +22,7 @@
 }
 
 .mainDecription {
-  width: fluid(300, 600);
+  max-width: fluid(300, 600);
 
   font-family: $font-family-base;
   word-spacing: $spacing-sm;
