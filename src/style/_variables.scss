@@ -5,11 +5,11 @@
   --secondary-color: #ffffff;
   --text-light: var(--primary-color);
   --text-dark: var(--secondary-color);
-  --text-active: var(--gradient-text-light);
+  --text-active: var(--text-light);
 }
 
 [data-theme='dark'] {
-  --text-active: var(--gradient-text-dark);
+  --text-active: var(--text-dark);
 }
 
 // Цвета
