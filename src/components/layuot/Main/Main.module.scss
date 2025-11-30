@@ -52,7 +52,7 @@
 }
 
 .mainQuote {
-  width: rem(400);
+  max-width: rem(400);
 
   font-family: $font-family-base;
   font-style: italic;
