@@ -10,17 +10,18 @@
 
   font-size: fluid(16, 20);
   text-transform: uppercase;
-  letter-spacing: fluid(4, 6);
+  letter-spacing: fluid(2, 4);
 
-  transition:
-    background-color $transition-fast,
-    transform $transition-normal;
+  transition: all $transition-fast;
 
   @include hover {
-    transform: translateY(rem(-3));
+    transform: translateY(rem(-1));
+    letter-spacing: fluid(3, 5);
     background-color: color.adjust($color-grey, $lightness: 10%);
+    box-shadow: $box-shadow-lg;
   }
   &:active {
-    transform: translateY(rem(2));
+    transform: translateY(rem(1));
+    letter-spacing: fluid(2, 4);
   }
 }
